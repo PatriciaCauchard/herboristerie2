@@ -13,6 +13,7 @@ function type_init() {
 		'show_admin_column'     => false,
 		'query_var'             => false,
 		'rewrite'               => true,
+		'has_archive'			=> true,
 		'capabilities'          => [
 			'manage_terms' => 'manage_types',
 			'edit_terms'   => 'edit_types',

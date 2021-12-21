@@ -25,7 +25,7 @@ get_header(); ?>
 
             <article class="plant">
                     <h1 class="plant__title"><?php the_title(); ?></h1>
-                    <img class="plant__picture">
+                    <div class="card__image"><?php the_post_thumbnail();?></div>
                     <p class="plant__description"><?php the_content(); ?></p>
             </article>
 

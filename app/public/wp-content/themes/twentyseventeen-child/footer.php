@@ -18,6 +18,7 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="wrap">
+			<a href="#top" class="anchor"><img src="https://img.icons8.com/ios/50/000000/circled-chevron-up.png"/></a>
 				<?php
 				get_template_part( 'template-parts/footer/footer', 'widgets' );
 

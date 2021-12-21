@@ -37,7 +37,7 @@ function plant_init() {
 			'show_in_nav_menus'     => true,
 			'supports'              => [ 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields', 'comments', 'revisions' ],
 			'has_archive'           => true,
-			'rewrite'               => false, // pas besoin d'URL front car on utilise WordPress seulement avec son API
+			'rewrite'               => [ 'slug' => 'plantes'],
 			'query_var'             => false,
 			'menu_position'         => null,
 			'menu_icon'             => 'dashicons-admin-site',

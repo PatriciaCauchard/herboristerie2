@@ -14,31 +14,29 @@ get_header(); ?>
         'hide_empty' => 0
     ) );
 ?>
-
-<div id="primary" class="content-area">
         <main id="main" class="site-main">
 
-        <?php
-        if ( have_posts() ) : ?>
-            
-            <div class="posts-list">
+        <div class="posts-list">
             <?php
-                /* Start the Loop */
-                while ( have_posts() ) : the_post(); ?>
+            if ( have_posts() ) :
+                ?>
+                <?php
+                // Start the Loop.
+                while ( have_posts() ) :
+                    the_post();
+                    ?>
 
-                    <div class="card">
-                        <figure class="card__thumb">
-                            <img src="<?php the_post_thumbnail('post-list-thumb');?>" alt="Plante Remede" class="card__image">
-                            <figcaption class="card__caption">
-                            <a href="<?php the_permalink(); ?>" class="card__link"> <h2 class="card__title"><?php the_title();?></h2>
-                            </a>
-                            </figcaption>
-                        </figure>
-                    </div>
-            <?php
-                endwhile;
-            ?>
-            </div>
+                    <a href="<?php the_permalink(); ?>" class="card__link">
+                        <div class="card">
+                            <figure class="card__thumbnail">
+                                <div class="card__image"><?php the_post_thumbnail('post-list-thumb');?></div>
+                                <span class="card__title"><?php the_title();?></span>
+                            </figure>
+                        </div>
+                    </a>
+
+                 <?php endwhile;?>
+        </div>
             
             <?php
 
@@ -49,6 +47,6 @@ get_header(); ?>
         endif; ?>
 
         </main><!-- #main -->
-    </div><!-- #primary -->
-<?php
+  
+    <?php
 get_footer();

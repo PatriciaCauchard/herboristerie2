@@ -23,19 +23,19 @@ get_header(); ?>
                 while ( have_posts() ) :
                     the_post();
                     ?>
-                    <div class="card">
-                        <figure class="card__thumb">
-                            <div class="card__image"><?php the_post_thumbnail('post-list-thumb');?></div>
-                            <figcaption class="card__caption">
-                            <a href="<?php the_permalink(); ?>" class="card__link"> <h2 class="card__title"><?php the_title();?></h2>
-                            </a>
-                            </figcaption>
-                        </figure>
-                    </div>
+
+                    <a href="<?php the_permalink(); ?>" class="card__link">
+                        <div class="card">
+                            <figure class="card__thumbnail">
+                                <div class="card__image"><?php the_post_thumbnail('post-list-thumb');?></div>
+                                <span class="card__title"><?php the_title();?></span>
+                            </figure>
+                        </div>
+                    </a>
+
                  <?php endwhile;?>
         </div>
-
-            <?php
+        <?php
             the_posts_pagination(
                 array(
                     'prev_text'          => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
@@ -52,7 +52,6 @@ get_header(); ?>
         ?>
 
         </main><!-- #main -->
-     
 
 <?php
-get_footer();
+get_footer(); 
