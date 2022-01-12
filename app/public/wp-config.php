@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'vvdqszry_herboristerie' );
 
 /** MySQL database username */
-define( 'DB_USER', 'vvdqszry_tmpe2Oit@localhost' );
+define( 'DB_USER', 'vvdqszry_herboriste' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'herboriste' );
+define( 'DB_PASSWORD', 'Herboriste01!' );
 
 /** MySQL hostname */
 define( 'DB_HOST', '127.0.0.1' );
@@ -36,6 +36,9 @@ define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
+
+define('WP_SITEURL', 'https://leaf-n-bloom.go.yn.fr/');
+define('WP_HOME', 'https://leaf-n-bloom.go.yn.fr/');
 
 /**
  * Authentication Unique Keys and Salts.
