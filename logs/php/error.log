@@ -1,0 +1,24 @@
+[20-Dec-2021 13:47:37 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\Users\patri\Local Sites\herboristerie2\app\public\wp-content\themes\twentyseventeen-child\archive-plant.php on line 43
+[21-Dec-2021 12:35:13 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\Users\patri\Local Sites\herboristerie2\app\public\wp-content\themes\twentyseventeen-child\functions.php on line 17
+[21-Dec-2021 12:35:13 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\Users\patri\Local Sites\herboristerie2\app\public\wp-content\themes\twentyseventeen-child\functions.php on line 17
+[21-Dec-2021 12:35:14 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\Users\patri\Local Sites\herboristerie2\app\public\wp-content\themes\twentyseventeen-child\functions.php on line 17
+[21-Dec-2021 12:37:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_archived() in C:\Users\patri\Local Sites\herboristerie2\app\public\wp-content\themes\twentyseventeen-child\functions.php:17
+Stack trace:
+#0 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\class-wp-hook.php(303): set_custom_post_types_admin_order(Object(WP_Query))
+#1 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#2 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#3 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\class-wp-query.php(1784): do_action_ref_array('pre_get_posts', Array)
+#4 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\class-wp-query.php(3465): WP_Query->get_posts()
+#5 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\class-wp.php(629): WP_Query->query(Array)
+#6 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\class-wp.php(752): WP->query in C:\Users\patri\Local Sites\herboristerie2\app\public\wp-content\themes\twentyseventeen-child\functions.php on line 17
+[21-Dec-2021 12:37:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_archived() in C:\Users\patri\Local Sites\herboristerie2\app\public\wp-content\themes\twentyseventeen-child\functions.php:17
+Stack trace:
+#0 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\class-wp-hook.php(303): set_custom_post_types_admin_order(Object(WP_Query))
+#1 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#2 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#3 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\class-wp-query.php(1784): do_action_ref_array('pre_get_posts', Array)
+#4 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\class-wp-query.php(3465): WP_Query->get_posts()
+#5 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\class-wp.php(629): WP_Query->query(Array)
+#6 C:\Users\patri\Local Sites\herboristerie2\app\public\wp-includes\class-wp.php(752): WP->query in C:\Users\patri\Local Sites\herboristerie2\app\public\wp-content\themes\twentyseventeen-child\functions.php on line 17
+[21-Dec-2021 12:47:34 UTC] PHP Parse error:  syntax error, unexpected ''query_var'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in C:\Users\patri\Local Sites\herboristerie2\app\public\wp-content\plugins\herboristerie\post-types\plant.php on line 41
+[21-Dec-2021 12:47:35 UTC] PHP Parse error:  syntax error, unexpected ''query_var'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in C:\Users\patri\Local Sites\herboristerie2\app\public\wp-content\plugins\herboristerie\post-types\plant.php on line 41

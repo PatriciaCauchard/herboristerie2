@@ -1,0 +1,30 @@
+# Fichier de configuration
+wp-config.php
+
+# Dossier des dépendances
+vendor
+
+# Dossier d'installation de WordPress
+wp
+
+# Dossier des fichiers de traduction
+/content/languages
+
+# Dossier des fichiers de mise à jour
+/content/upgrade
+
+# Dossier des médias
+/content/uploads
+
+# Plugins
+/content/plugins/*/
+
+# Themes
+/content/themes/*/
+
+#Base de données
+app/sql/local.sql
+
+#Dossier de log local pour debug
+logs/
+
